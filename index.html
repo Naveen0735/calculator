@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h2 class="heading">Calculator</h2>
+            
+            <div class="main-2">
+                <button class="num" onclick="
+                    calculation += '1';
+                    console.log(calculation);
+                ">1</button>
+                <button class="num" onclick="
+                    calculation += '2';
+                    console.log(calculation);
+                ">2</button>
+                <button class="num" onclick="
+                    calculation += '3';
+                    console.log(calculation);
+                ">3</button>
+                <button class="oper" onclick="
+                    calculation += ' + ';
+                    console.log(calculation);
+                ">+</button>
+    
+            </div>
+            <div class="main-2">
+                <button class="num" onclick="
+                    calculation += '4';
+                    console.log(calculation);
+                ">4</button>
+                <button class="num" onclick="
+                    calculation += '5';
+                    console.log(calculation);
+                ">5</button>
+                <button class="num" onclick="
+                    calculation += '6';
+                    console.log(calculation);
+                ">6</button>
+                <button class="oper" onclick="
+                    calculation += ' - ';
+                    console.log(calculation);
+                ">-</button>
+            </div>
+            <div class="main-2">
+                <button class="num" onclick="
+                    calculation += '7';
+                    console.log(calculation);   
+                ">7</button>
+                <button class="num" onclick="
+                    calculation += '8';
+                    console.log(calculation);
+                ">8</button>
+                <button class="num" onclick="
+                    calculation += '9';
+                    console.log(calculation);
+                ">9</button>
+                <button class="oper" onclick="
+                    calculation += ' * ';
+                    console.log(calculation);
+                ">*</button>
+            </div>
+            <div class="main-2">
+                <button class="num" onclick="
+                    calculation += '0';
+                    console.log(calculation);
+                ">0</button> 
+                <button class="num" onclick="
+                    calculation += '.';
+                    console.log(calculation);
+                ">.</button> 
+                <button class="num" onclick="
+                    calculation = eval(calculation);
+                    console.log(calculation);
+                    alert(calculation);
+                    calculation = '';
+                "> = </button>
+                <button class="oper" onclick="
+                    calculation += '/';
+                    console.log(calculation);
+                "> / </button> 
+                
+            </div>
+            <div>
+                <button class="num" onclick="
+                     calculation = '';
+                     console.log('cleared');   
+                ">Clear</button>
+            </div>
+            <p class="des"><span class="note">Note:</span> Do your calculations , answer pops.</p>
+
+        </div>
+        
+        
+    </body>
+    <script>
+        let calculation = '';
+    </script>
+</html>
